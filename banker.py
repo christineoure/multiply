@@ -28,15 +28,19 @@ class Bank:
         elif amount<0:
             return f"Amount must be greater than zero"
         else:
-            self.balance-=amount
-            self.withdrawals.append(amount)
+            self.transaciton_cost = 100
+            self.balance-=amount + self.transaciton_cost
+            
             return f"You have withdrawn {amount}. Your balance is {self.balance}", self.withdrawals
 
-    def deposits_statements():
-        print(*self.deposits,sep="/n")
+    def deposits_statements(self):
+        for x in self.deposits:
+             print (x)
 
-    def withdrawals_statements():
-        print(*self.withdrawals,sep="/n")
+    def withdrawals_statements(self):
+        for x in self.deposits:
+             print (x)
+    
         
         
         
