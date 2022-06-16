@@ -5,6 +5,7 @@ class Bank:
         self.balance=0
         self.deposits=[]
         self.withdrawals=[]
+        self.transaction=[]
 
         
 
@@ -41,6 +42,9 @@ class Bank:
         for x in self.deposits:
              print (x)
     
+    def current_balance(self):
+        balance=self.balance
+        return f"Your current balance is{balance}" 
         
         
         
